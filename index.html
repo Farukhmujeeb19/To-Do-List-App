@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>My <em>Tasks</em></h1>
+        <p class="meta" id="metaText">0 tasks</p>
+      </header>
+
+      <div class="input-row">
+        <input type="text" id="taskInput" placeholder="Add a new task…" />
+        <button onclick="addTask()" title="Add task">+</button>
+      </div>
+
+      <div class="task-list" id="taskList"></div>
+
+      <div class="footer" id="footer" style="display: none">
+        <span id="doneCount"></span>
+        <button class="clear-btn" onclick="clearDone()">Clear completed</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
